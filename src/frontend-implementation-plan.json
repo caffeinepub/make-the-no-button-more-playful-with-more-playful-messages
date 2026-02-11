@@ -1,0 +1,44 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Shareable slug URL for Valentine page",
+  "requirements": [
+    {
+      "id": "REQ-4",
+      "summary": "Support opening the Valentine experience from a URL-safe slug path containing the phrase “mujhe to tu psnd hai”.",
+      "acceptanceCriteria": [
+        "A URL-safe slug is defined that preserves the phrase (e.g., by converting spaces to hyphens) while keeping the phrase recognizable in the URL.",
+        "Opening the app at the slug URL renders the same Valentine experience as the default root URL (no blank page, no errors).",
+        "The existing root URL continues to work unchanged."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/lib/shareSlug.ts",
+          "operation": "create",
+          "description": "Define and export the canonical, URL-safe slug for the exact phrase (e.g., \"mujhe-to-tu-psnd-hai\") plus small helpers to (a) recognize allowed paths and (b) build the canonical share URL from window.location.origin."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add minimal path handling so both the root path and the canonical slug path render ValentinePage; use the helper(s) from frontend/src/lib/shareSlug.ts to match and normalize the current window.location.pathname (ensure no errors/blank screen when loaded directly at the slug)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Show a copyable share link in the Valentine UI that includes the custom slug, with English sharing/copy labels.",
+      "acceptanceCriteria": [
+        "The page shows a copyable share link that includes the custom slug with the phrase in it.",
+        "Copying the link produces a valid URL that can be pasted into a new tab and loads the Valentine page successfully.",
+        "All user-facing UI labels related to sharing/copying are in English."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/ValentinePage.tsx",
+          "operation": "modify",
+          "description": "Expose the canonical share URL in the UI (e.g., a visible link + a \"Copy link\" control) using helpers from frontend/src/lib/shareSlug.ts and the browser clipboard API; keep share/copy labels in English. Use shadcn-ui components already present in the page (e.g., Button/Card) to keep styling consistent. Verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

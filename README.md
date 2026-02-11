@@ -1,2 +1,3 @@
-# make-the-no-button-more-playful-with-more-playful-messages
-Exported from Caffeine project: Make the “No” button more playful with more playful messages
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

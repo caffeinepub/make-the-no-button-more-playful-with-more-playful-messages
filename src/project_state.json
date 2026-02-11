@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Romantic interactive Valentine’s page; user wants the “No” button to be more playful with added playful messages, and also wants a shorter/custom share URL containing the phrase “mujhe to tu psnd hai”.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-expand-and-improve-the-rotating-text-messages-shown-on-the-no-button-so-it-cycles-through-a-larger-set-of-playful-interesting-valentine-themed-excuses-written-in-english",
+      "title": "Expand and improve the rotating text/messages shown on the “No” button so it cycles through a larger set of playful, interesting, Valentine-themed excuses written in English.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-make-the-no-button-s-interaction-behavior-more-playful-than-the-current-simple-random-reposition-bounce-by-adding-additional-playful-motion-feedback-effects-during-interaction-e-g-wiggle-spin-squish-feint-movement-or-other-fun-micro-interactions-while-keeping-the-yes-button-easy-to-click",
+      "title": "Make the “No” button’s interaction behavior more playful than the current simple random reposition + bounce by adding additional playful motion/feedback effects during interaction (e.g., wiggle/spin/squish, feint movement, or other fun micro-interactions) while keeping the “Yes” button easy to click.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-no-button-s-movement-stays-within-the-visible-viewport-on-common-screen-sizes-mobile-and-desktop-so-it-doesn-t-jump-off-screen-or-under-the-browser-ui",
+      "title": "Ensure the “No” button’s movement stays within the visible viewport on common screen sizes (mobile and desktop) so it doesn’t jump off-screen or under the browser UI.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-support-for-a-shareable-url-variant-that-includes-the-exact-phrase-mujhe-to-tu-psnd-hai-in-the-url-as-a-url-safe-slug-so-the-valentine-page-renders-correctly-when-opened-via-that-url",
+      "title": "Add support for a shareable URL variant that includes the exact phrase “mujhe to tu psnd hai” in the URL (as a URL-safe slug), so the Valentine page renders correctly when opened via that URL.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-expose-the-custom-share-url-in-the-ui-so-the-user-can-copy-share-it-easily",
+      "title": "Expose the custom share URL in the UI so the user can copy/share it easily.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Make the “No” button more playful and add interesting playful messages",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Provide a shorter/custom share URL that includes the phrase “mujhe to tu psnd hai”.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Make the “No” button more playful with more playful messages",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

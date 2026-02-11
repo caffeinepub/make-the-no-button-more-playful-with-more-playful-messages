@@ -1,0 +1,42 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-support-for-a-shareable-url-variant-that-includes-the-exact-phrase-mujhe-to-tu-psnd-hai-in-the-url-as-a-url-safe-slug-so-the-valentine-page-renders-correctly-when-opened-via-that-url",
+      "featureTitle": "Add support for a shareable URL variant that includes the exact phrase “mujhe to tu psnd hai” in the URL (as a URL-safe slug), so the Valentine page renders correctly when opened via that URL.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/lib/shareSlug.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-expose-the-custom-share-url-in-the-ui-so-the-user-can-copy-share-it-easily",
+      "featureTitle": "Expose the custom share URL in the UI so the user can copy/share it easily.",
+      "files": [
+        "frontend/src/pages/ValentinePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
