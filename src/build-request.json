@@ -1,52 +1,32 @@
 {
   "kind": "build_request",
-  "title": "Add a shareable short URL path containing “mujhe to tu psnd hai”",
+  "title": "Update Valentine signature name to “Sanya baby ay”",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-4",
-      "text": "Add support for a shareable URL variant that includes the exact phrase “mujhe to tu psnd hai” in the URL (as a URL-safe slug), so the Valentine page renders correctly when opened via that URL.",
+      "id": "REQ-8",
+      "text": "Update the Valentine page signature name from “Sanya” to “Sanya baby ay”, and ensure the success screen continues to display the exact same updated name consistently.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-6"
         ],
         "quotes": [
-          "Shorter url with 'mujhe to tu psnd hai 'in it"
+          "Change the name from sanya to sanya baby ay the end"
         ]
       },
       "acceptanceCriteria": [
-        "A URL-safe slug is defined that preserves the phrase (e.g., by converting spaces to hyphens) while keeping the phrase recognizable in the URL.",
-        "Opening the app at the slug URL renders the same Valentine experience as the default root URL (no blank page, no errors).",
-        "The existing root URL continues to work unchanged."
-      ]
-    },
-    {
-      "id": "REQ-5",
-      "text": "Expose the custom share URL in the UI so the user can copy/share it easily.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ],
-        "quotes": [
-          "Shorter url with 'mujhe to tu psnd hai 'in it"
-        ]
-      },
-      "acceptanceCriteria": [
-        "The page shows a copyable share link that includes the custom slug with the phrase in it.",
-        "Copying the link produces a valid URL that can be pasted into a new tab and loads the Valentine page successfully.",
-        "All user-facing UI labels related to sharing/copying are in English."
+        "On the main Valentine page, the final signature line at the bottom of the card displays exactly: “Sanya baby ay”.",
+        "After clicking “Yes”, the success screen uses the same updated name (e.g., the line “{name}, you're amazing! ✨” renders with “Sanya baby ay”).",
+        "There are no remaining user-visible occurrences of the old name “Sanya” in the Valentine flow UI."
       ]
     }
   ],
   "constraints": [
-    "Do not use third-party URL shortener services or external APIs.",
-    "Do not modify files under frontend/src/components/ui or other immutable paths listed in SYSTEM_CONTEXT."
+    "Do not edit files in frontend immutablePaths (e.g., frontend/src/hooks/useInternetIdentity.ts(x), frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui)."
   ],
   "nonGoals": [
-    "Providing a shorter domain name than the existing deployed domain (only a path/slug-based URL variant is in scope).",
-    "Implementing custom domains or DNS management."
+    "Do not change the No button behaviors, messages, share URL logic, styling, or backend behavior beyond what is necessary to update the displayed name."
   ],
   "imageRequirements": {
     "required": [],

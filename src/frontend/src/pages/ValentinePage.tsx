@@ -8,7 +8,7 @@ import { Heart, Copy, Check } from 'lucide-react';
 import { getShareUrl } from '@/lib/shareSlug';
 
 // Name constant as requested
-const name = "Her Name";
+const name = "Sanya baby ay";
 
 const noButtonTexts = [
   "Let me think 🤔",
@@ -256,6 +256,13 @@ export default function ValentinePage() {
                 )}
               </Button>
             </div>
+          </div>
+
+          {/* Signature */}
+          <div className="pt-6 mt-6 border-t border-valentine-accent/10">
+            <p className="text-lg font-handwritten text-valentine-dark/80">
+              {name}
+            </p>
           </div>
         </div>
       </Card>

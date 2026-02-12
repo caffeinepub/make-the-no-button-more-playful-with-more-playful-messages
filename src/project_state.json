@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
-  "summary": "Romantic interactive Valentine’s page; user wants the “No” button to be more playful with added playful messages, and also wants a shorter/custom share URL containing the phrase “mujhe to tu psnd hai”.",
+  "projectStateVersion": 11,
+  "summary": "Romantic interactive Valentine’s page; user wants the “No” button to be more playful with added playful messages, and also wants a shorter/custom share URL containing the phrase “mujhe to tu psnd hai”. Update the ending signature name from “Sanya” to “Sanya baby ay”.",
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
@@ -45,6 +45,30 @@
         "REQ-5"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-the-valentine-page-to-use-the-name-sanya-and-display-it-at-the-end-of-the-page-content-i-e-as-a-final-signature-style-line-at-the-bottom-of-the-main-valentine-card-and-also-ensure-the-success-screen-continues-to-show-the-same-name",
+      "title": "Update the Valentine page to use the name “Sanya” and display it at the end of the page content (i.e., as a final signature-style line at the bottom of the main Valentine card and also ensure the success screen continues to show the same name).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-re-create-the-application-build-exactly-as-it-is-currently-no-functional-or-ui-changes-and-redeploy-the-same-version-again",
+      "title": "Re-create the application build exactly as it is currently (no functional or UI changes) and redeploy the same version again.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-valentine-page-signature-name-from-sanya-to-sanya-baby-ay-and-ensure-the-success-screen-continues-to-display-the-exact-same-updated-name-consistently",
+      "title": "Update the Valentine page signature name from “Sanya” to “Sanya baby ay”, and ensure the success screen continues to display the exact same updated name consistently.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -57,6 +81,12 @@
     {
       "id": "AR-2",
       "summary": "Provide a shorter/custom share URL that includes the phrase “mujhe to tu psnd hai”.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Change the ending signature name from “Sanya” to “Sanya baby ay” (and keep success screen consistent).",
       "reqIds": [],
       "status": "pending"
     }

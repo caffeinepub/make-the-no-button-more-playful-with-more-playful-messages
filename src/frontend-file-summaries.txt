@@ -1,10 +1,11 @@
 {
   "frontend/src/App.tsx": "Main application component that wraps ValentinePage with QueryClientProvider and validates the current pathname against allowed Valentine paths (root or slug).",
-  "frontend/src/pages/ValentinePage.tsx": "Main Valentine's Day interactive page with playful \"No\" button, 60+ rotating excuses, micro-interactions, and a new shareable link section with copy-to-clipboard functionality displaying the custom slug URL.",
+  "frontend/src/pages/ValentinePage.tsx": "Main Valentine's Day interactive page with playful \"No\" button, 60+ rotating excuses, micro-interactions, shareable link section with copy-to-clipboard functionality, and a signature line displaying \"Sanya baby ay\" at the bottom of the card.",
   "frontend/src/components/FloatingHearts.tsx": "Background animation component that renders 20 floating hearts with random positions, delays, and sizes for romantic atmosphere.",
   "frontend/src/components/SuccessMessage.tsx": "Success celebration screen displayed after \"Yes\" is clicked, featuring confetti hearts animation and personalized message with the recipient's name.",
   "frontend/src/hooks/useQueries.ts": "React Query hooks for backend integration - useCheckResponse checks if user already responded, useSubmitResponse submits the Valentine response.",
   "frontend/src/index.css": "Global styles with romantic Valentine's Day OKLCH color palette, custom fonts (Pacifico handwritten, Quicksand rounded), and extensive animations including heartbeat, floating hearts, confetti, and six playful \"No\" button micro-interactions (wiggle, squish, spin, juke, shake, flip).",
   "frontend/tailwind.config.js": "Tailwind configuration extended with Valentine's Day color tokens and custom font families for handwritten and rounded text styles.",
-  "frontend/src/lib/shareSlug.ts": "Defines the canonical URL-safe slug \"mujhe-to-tu-psnd-hai\" and provides helper functions to validate paths and build shareable URLs."
+  "frontend/src/lib/shareSlug.ts": "Defines the canonical URL-safe slug \"mujhe-to-tu-psnd-hai\" and provides helper functions to validate paths and build shareable URLs.",
+  "frontend/index.html": "HTML entry point with build metadata comment to trigger redeployment while preserving all existing Valentine page functionality."
 }
